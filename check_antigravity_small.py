@@ -36,8 +36,8 @@ if '__name__'=='__main__':
 
 	inStock = False
 
-	small = soup.find_all("a", class_="pickSize soldOut", id="lllS_sz")
-	if small!=[]:
+	small_is_out = soup.find_all("a", class_="pickSize soldOut", id="lllS_sz")
+	if small_is_out!=[]:
 		inStock = True
 		sendEmail()
 
